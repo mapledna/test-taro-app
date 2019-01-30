@@ -22,8 +22,9 @@ import './index.less'
 }))
 class Index extends Component {
 
-    config = {
-    navigationBarTitleText: '首页'
+  config = {
+    navigationBarTitleText: '首页22',
+    backgroundColor: 'red', // 窗口的背景色（配置无效）
   }
 
   componentWillReceiveProps (nextProps) {
