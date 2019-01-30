@@ -18,6 +18,7 @@ const store = configStore()
 
 class App extends Component {
 
+  // 项目配置
   config = {
     pages: [
       'pages/index/index'
