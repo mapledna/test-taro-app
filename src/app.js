@@ -28,7 +28,7 @@ class App extends Component {
    * 主要参考微信小程序的全局配置而来，在编译成小程序时，这一部分配置将会被抽离成 app.json，而编译成其他端，亦会有其他作用。
    * 微信小程序的全局配置：https://developers.weixin.qq.com/miniprogram/dev/framework/config.html
    */
-  
+
   config = {
     // 指定需要渲染展示的页面。指定页面具体的 js 文件，可以不带后缀
     pages: [
@@ -61,27 +61,27 @@ class App extends Component {
    * 生命周期
    */
 
-  // NOTE: 程序被载入，在微信小程序中这一生命周期方法对应 app 的 onLaunch。
+  // NOTE: 程序被载入，在微信小程序中对应 app 的 onLaunch。
   componentWillMount () {
   // NOTE: 微信小程序中 onLaunch 通常带有一个参数 options，在 Taro 中你可以在所有生命周期和普通事件方法中通过 this.$router.params 访问到，在其他端也适用。
     console.log(this.$router.params)
   }
 
-  // NOTE: 程序被载入，在微信小程序中这一生命周期方法对应 app 的 onLaunch，在 componentWillMount 后执行。
+  // NOTE: 程序被载入，在微信小程序中对应 app 的 onLaunch，在 componentWillMount 后执行。
   componentDidMount () {}
 
-  // NOTE: 程序展示出来，在微信小程序中这一生命周期方法对应 onShow，在 H5 中同样实现。
+  // NOTE: 程序展示出来，在微信小程序中对应 onShow，在 H5 中同样实现。
   componentDidShow () {}
 
-  // NOTE: 程序被隐藏，在微信小程序中这一生命周期方法对应 onHide，在 H5 中同样实现。
+  // NOTE: 程序被隐藏，在微信小程序中对应 onHide，在 H5 中同样实现。
   componentDidHide () {}
 
   componentCatchError () {}
 
-  // NOTE: 错误监听函数，在微信小程序中这一生命周期方法对应 onError。
+  // NOTE: 错误监听函数，在微信小程序中对应 onError。
   componentDidCatchError () {}
 
-  // NOTE: 页面不存在监听函数，在微信小程序中这一生命周期方法对应 onPageNotFound。
+  // NOTE: 页面不存在监听函数，在微信小程序中对应 onPageNotFound。
   componentDidNotFound () {}
   
 
