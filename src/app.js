@@ -90,7 +90,7 @@ class App extends Component {
    * 注意：暂时只有微信小程序端支持这些方法，编译到 H5 端后这些方法均会失效。
    */
 
-  // onPullDownRefresh	页面相关事件处理函数--监听用户下拉动作
+  // onPullDownRefresh	页面相关事件处理函数--监听用户下拉动作，需要在页面配置中开启 enablePullDownRefresh
   // onReachBottom	页面上拉触底事件的处理函数
   // onShareAppMessage	用户点击右上角转发
   // onPageScroll	页面滚动触发事件的处理函数

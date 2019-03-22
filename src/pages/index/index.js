@@ -32,8 +32,10 @@ class Index extends Component {
    * 小程序专属
    */
   config = {
-    navigationBarTitleText: '首页22',
+    navigationBarTitleText: 'Taro 测试商城',
     backgroundColor: 'red', // 窗口的背景色（配置无效）
+
+    enablePullDownRefresh: true, // 
   }
 
   /**
